@@ -56,9 +56,9 @@ VALUE
 
 
 -- Q4
-UPDATE people SET department_id=1 WHERE person_id=1;
-UPDATE people SET department_id=2 WHERE person_id=2;
-UPDATE people SET department_id=3 WHERE person_id=4;
+UPDATE people SET department_id = 1 WHERE person_id = 1;
+UPDATE people SET department_id = 2 WHERE person_id = 2;
+UPDATE people SET department_id = 3 WHERE person_id = 4;
 
 
 -- Q5
@@ -82,22 +82,22 @@ ORDER BY
   -- Q7
 SELECT name
 FROM people
-WHERE gender=2 AND age BETWEEN 20 AND 29
-OR gender=1 AND age BETWEEN 40 AND 49
+WHERE gender = 2 AND age BETWEEN 20 AND 29
+OR gender = 1 AND age BETWEEN 40 AND 49
 ORDER BY gender, age;
 
 
 -- Q8
 SELECT name, age
 FROM people
-WHERE department_id=1
+WHERE department_id = 1
 ORDER BY age DESC;
 
 
 -- Q9
 SELECT AVG(age) AS average_age
 FROM people
-WHERE gender=2;
+WHERE gender = 2;
 
 
 -- Q10
