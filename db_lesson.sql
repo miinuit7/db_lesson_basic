@@ -79,7 +79,6 @@ ORDER BY
   「people」テーブルの中の「department_id」カラムが1のものだけを指定し、表示させるレコードは「name」「email」「age」。
   さらに「created_at」を基準に昇順で表示させる。
 
-
   -- Q7
 SELECT name
 FROM people
