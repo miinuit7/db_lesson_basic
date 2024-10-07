@@ -1,3 +1,4 @@
+
 -- Q1
 CREATE TABLE departments (
   department_id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY COMMENT '部署ID',
@@ -109,3 +110,4 @@ FROM people AS p INNER JOIN reports AS r ON p.person_id = r.person_id;
 SELECT p.name, r.content
 FROM people AS p LEFT OUTER JOIN reports AS r ON p.person_id = r.person_id
 WHERE r.content IS NULL;
+=======
